@@ -1,93 +1,182 @@
+<!-- write your code here -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Psikolog Online</title>
-  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Fredoka+One&family=Maven+Pro:wght@400;500&family=Mulish:wght@500;800&display=swap" rel="stylesheet">
+    <title>kelas qodr</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/logo.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <script src="script.js"></script>
-    <div class="container">
-      
-      <h1><img src="dokter.png" height="98"> alloPsikolog</h1>
-      <h2>Berikut adalah psikolog yang dapat dipilih</h2>
-      <div class="cards">
-
+    <section id="home">
+      <div class="home-left">
+        <h3 class="home-title text-bold text-primary">ALLO PSIKOLOG</h3>
+        <p class="home-description text-secondary text-reguler">
+          At Allo Psikolog, we understand that seeking help for mental health issues can be 
+          intimidating. That's why we have created a safe, supportive, and confidential online 
+          platform that allows you to connect with our experts from the comfort of your own 
+          home. Our state-of-the-art technology ensures that your privacy and confidentiality are 
+          protected at all times.
+        </p>
       </div>
-      <h2></h2>
-      <h2>Pasien yang sudah mendaftar</h2>
-        <div class="lists">
-          <div class="list">
-            <div class="pasien">
-              <img src="https://i.pinimg.com/564x/5e/a5/24/5ea524be1d230dc27809d6942a0a2947.jpg">
-              <p>Angga</p>
-              <span>Dokter Fajarin</span>
-              <span>Hari Kamis</span>
-              <span>Keluhan saya sakit hati setelah diputusin pacar, jadi susah konsentrasi mengikuti pelajaran</span>
-              <p>Edit</p><p>Delete</p>
-            </div>
+      <div class="home-right">
+        <img src="parents-kid-doing-therapy.jpg" alt="imege-broken" />
+      </div>
+    </section>
+    <section class="container">
+      <h1>Daftar Psikolog</h1>
+      <div class="cards d-flex gap-3 flex-wrap m-5"></div>
+    </section>
+    <section id="testimoni">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">buat janji</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="list">
-            <div class="pasien">
-              <img src="https://i.pinimg.com/564x/5e/a5/24/5ea524be1d230dc27809d6942a0a2947.jpg">
-              <p>Fablo</p>
-              <span>Dokter Kamado</span>
-              <span>Hari Minggu</span>
-              <span>Keluhan saya suka pusing setelah belajar, mungkin saya kena mental breakdance</span>
-              <p>Edit</p><p>Delete</p>
-            </div>
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Psikolog</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  disabled
+                />
+                <input
+                  type="hidden"
+                  class="form-control"
+                  id="psikologId"
+                  name="psikologId"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="namaPasien" class="form-label">Nama Pasien</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="namaPasien"
+                  name="namaPasien"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="usia" class="form-label">Usia</label>
+                <input type="text" class="form-control" id="usia" name="usia" />
+              </div>
+              <div class="mb-3">
+                <label for="hari" class="form-label">Hari</label>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="hari"
+                  id="hari"
+                >
+                  <option value="senin">senin</option>
+                  <option value="selasa">selasa</option>
+                  <option value="rabu">rabu</option>
+                  <option value="kamis">kamis</option>
+                  <option value="jumat">jumat</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="sesi" class="form-label">Sesi</label>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="sesi"
+                  id="sesi"
+                >
+                  <option value="pagi">pagi</option>
+                  <option value="siang">siang</option>
+                  <option value="malam">malam</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="keluhan"
+                  id="keluhan"
+                  style="height: 100px"
+                  name="keluhan"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              tutup
+            </button>
+            <button type="button" class="btn btn-primary">submit</button>
           </div>
         </div>
+      </div>
     </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
-
-
-        <!-- <div class="card">
-          <div class="profile">
-            <img
-              src="https://i.idol.st/u/card/icon/482SR-Mifune-Shioriko-%E8%89%B2%E3%81%8C%E5%A4%89%E3%82%8F%E3%81%A3%E3%81%A6%E3%81%84%E3%81%8F%E3%82%93%E3%81%A7%E3%81%99-Just-Believe-wummIG.png">
-            <p>Dokter Shioriko Mifune</p>
-            <p>Spesialis penyemangat disaat rasa sendiri&nbsp;</p>
-            <span>Senin - Kamis</span>
-            <span>Rp 1.000.000</span>
-            <p>Daftar sekarang</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="profile">
-            <img
-              src="https://i.idol.st/u/card/icon/749SR-Sakurauchi-Riko-%E6%82%A9%E3%82%93%E3%81%A7%E3%82%8B%E6%83%B3%E3%81%84%E3%82%92%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E6%AD%8C%E3%81%AB-Mirai-no-Bokura-wa-Shitteru-yo-QDpXuA.png">
-            <p>Dokter Riko Sakurauchi&nbsp;</p>
-            <p>Spesialis untuk yang menjadi korban NTR</p>
-            <span>Senin - Jumat</span>
-            <span>Rp 800.000</span>
-            <p>Daftar sekarang</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="profile">
-            <img
-              src="https://i.idol.st/u/card/icon/698UR-Kousaka-Honoka-%E7%A7%81-%E3%81%8A%E5%8C%BB%E8%80%85%E3%81%95%E3%82%93%E3%81%A0%E3%81%8B%E3%82%89-The-Miracle-Specialist-04cmdt.png">
-            <p>Dokter Honoka Kousaka</p>
-            <p>Spesialis penyemangat disaat banyak tekanan</p>
-            <span>Sabtu - Minggu</span>
-            <span>Rp. 1.500.000</span>
-            <p>Daftar sekarang</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="profile">
-            <img
-              src="https://i.idol.st/u/card/icon/887SR-Sonoda-Umi-%E3%81%95%E3%81%82-%E5%8F%AC%E3%81%97%E4%B8%8A%E3%81%8C%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84-HEART-to-HEART-gpl9TI.png">
-            <p>Dokter Umi Sonoda</p>
-            <p>Spesialis menahan rasa sakit hati</p>
-            <span>Kamis - Minggu</span>
-            <span>Rp. 500.000</span>
-            <p>Daftar sekarang</p>
-          </div>
-        </div> -->
