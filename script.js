@@ -26,7 +26,14 @@ const doctors = [
       schedule: 'Kamis - Minggu',
       price: 'Rp 500.000',
       imgSrc: 'https://i.idol.st/u/card/icon/887SR-Sonoda-Umi-%E3%81%95%E3%81%82-%E5%8F%AC%E3%81%97%E4%B8%8A%E3%81%8C%E3%81%A3%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84-HEART-to-HEART-gpl9TI.png'
-    }
+    },
+    {
+      name: 'Dokter Patrick Bateman',
+      specialization: 'Spesialis gejala skizofrenia dan psikopat tingkat menengah dan akut',
+      schedule: 'Kamis - Minggu',
+      price: 'Rp 900.000',
+      imgSrc: 'https://www.uv.es/recursos/fatwirepub/ccurl/163/668/nitscinema2022americanpsycho850596[1].jpg'
+    },
   ];
   
   const cardsContainer = document.querySelector(".cards");
