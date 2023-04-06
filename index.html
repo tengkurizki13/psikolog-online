@@ -8,6 +8,67 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h2>Form Pemesanan</h2>
+    
+    <form id="form" class="tambah-pemesanan">
+      <label for="namaPasien">Nama Pasien: </label>
+      <input type="text" name="namaPasien" id="namaPasien">
+      <br>
+      <label for="usia">Usia: </label>
+      <input type="number" name="usia" id="usia">
+      <br>
+      <label for="hari">Hari: </label>
+      <select name="hari" id="hari">
+        <option value="">--Pilih Hari--</option>
+        <option value="Senin">Senin</option>
+        <option value="Selasa">Selasa</option>
+        <option value="Rabu">Rabu</option>
+        <option value="Kamis">Kamis</option>
+        <option value="Jumat">Jumat</option>
+      </select>
+      <br>
+      <label for="sesi">Sesi: </label>
+      <select name="sesi" id="sesi">
+        <option value="">--Pilih Sesi--</option>
+        <option value="Pagi">Pagi | Pukul 09:00 - 11:00</option>
+        <option value="Siang">Siang | Pukul 13:00 - 15:00</option>
+      </select>
+      <br>
+      <label for="keluhan">Keluhan: </label>
+      <textarea name="keluhan" id="keluhan"></textarea>
+      <br>
+      <label for="psikologId">Psikolog: </label>
+      <select name="psikologId" id="psikologId">
+        <option value="">--Pilih Psikolog--</option>
+
+      </select>
+      <br>
+      <button type="reset" id="reset">Reset</button>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    
+    <h2>Data Pemesanan</h2>
+    
+    <table border="1">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Nama Pasien</th>
+          <th>Usia</th>
+          <th>Hari</th>
+          <th>Sesi</th>
+          <th>Keluhan</th>
+          <th>Psikolog</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+    
+    <script src="data.js"></script>
+    <script src="functions.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
