@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #470ab8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0 0 70px 0;
+    font-size: 60px;
+    color: white;
+    font-family: "Fredoka One", cursive;
+    letter-spacing: 3px;
+}
+
+h2 {
+    margin: 0 0 70px 0;
+    font-size: 28px;
+    color: white;
+    font-family: "Fredoka One", cursive;
+    letter-spacing: 3px;
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.list {
+    width: 1060px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.pasien {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Mulish", sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.pasien img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.pasien p {
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.pasien span {
+    margin-top: 8px;
+    width: 100%;
+    line-height: 25px;
+    color: #999999;
+    font-weight: 800;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.profile {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Mulish", sans-serif;
+}
+
+.profile img {
+    width: 35%;
+    border-radius: 10px;
+}
+
+.profile p {
+    margin: 10px 0 0 0;
+    width: 100%;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.profile span {
+    margin-top: 8px;
+    width: 100%;
+    line-height: 25px;
+    color: #999999;
+    font-weight: 800;
+}
