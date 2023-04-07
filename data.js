@@ -63,7 +63,7 @@ const psikologArray = [
       "drika.png",
   },
   {
-    id: 7,
+    id: 8,
     name: "Dr. Susanti",
     specialization: "Psikologi Konseling",
     description:
@@ -83,3 +83,4 @@ const Pemesanan = function (id, namaPasien, usia, hari, sesi, keluhan, psikologI
   this.psikologId = psikologId;
 }
 
+const dataPemesanan = [];
