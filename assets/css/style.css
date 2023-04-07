@@ -257,3 +257,19 @@ section#statistic{
     font-size: 20px;
     text-align: center;
 }
+
+footer{
+    background-color: rgb(74, 74, 231);
+    color: #fff;
+    margin-top: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-banner{
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 20px;
+}
